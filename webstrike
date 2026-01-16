@@ -5,7 +5,7 @@
 In this lab, you analyze a provided PCAP file using Wireshark to investigate:
 - how an attacker uploaded a malicious web shell,
 - evidence of reverse shell communication,
-- and potential data exfiltration. :contentReference[oaicite:2]{index=2}
+- and potential data exfiltration. :contentReference[oaicite:2]{index=2} 
 ---
 #Tools Used
 - **Wireshark** — packet analysis
