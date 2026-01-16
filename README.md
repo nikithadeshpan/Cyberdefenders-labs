@@ -1,2 +1,2 @@
-# Cyberdefenders-labs
-Personal write-ups and investigations from Cyberdefenders Blue Team labs
+## Network Forensics Labs
+- [WebStrike – Web Server Compromise Investigation](Network-Forensics/WebStrike.md)
