@@ -1,0 +1,44 @@
+# WebStrike – Network Forensics Investigation (CyberDefenders)
+
+## Lab Overview
+**WebStrike** is a network forensics challenge on the CyberDefenders platform designed to simulate a real-world web server compromise. 
+In this lab, you analyze a provided PCAP file using Wireshark to investigate:
+- how an attacker uploaded a malicious web shell,
+- evidence of reverse shell communication,
+- and potential data exfiltration. :contentReference[oaicite:2]{index=2}
+---
+#Tools Used
+- **Wireshark** — packet analysis
+- Protocol filtering (HTTP, TCP streams)
+- Network endpoint statistics
+
+---
+# Investigation Summary
+
+##1 Initial Traffic Assessment
+- Loaded the PCAP in Wireshark.
+- Applied filters (e.g., `http`, `tcp`) to isolate relevant traffic.
+- Looked for abnormal HTTP POST requests suggestive of file uploads.
+
+##2 Web Shell Detection
+- Identified unusual HTTP requests that contained potential payloads.
+- Examined the request paths and content to see if a shell upload occurred.
+
+##3 Reverse Shell and C2 Behavior
+- Followed suspicious TCP streams to identify possible reverse shell communication.
+- Checked for extended TCP sessions not associated with normal web browsing.
+
+##4 Exfiltration Investigation
+- Reviewed outbound traffic for large transfers or unusual data flows.
+- Correlated time frames with other suspicious activity.
+---
+#Key Findings
+- Indicators of compromise in HTTP traffic
+- Evidence of remote command activity
+- Suspicious data transfer patterns
+---
+#Skills Demonstrated
+- Packet filtering and analysis in Wireshark
+- Identifying malicious HTTP activity
+- Reverse shell detection
+- Network behavior inference
